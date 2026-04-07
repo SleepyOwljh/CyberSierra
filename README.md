@@ -35,7 +35,7 @@ An AI-powered web application for analyzing CSV and Excel data using natural lan
 |-------|-----------|---------|
 | **Frontend** | Streamlit | Interactive web UI with chat, tables, charts |
 | **AI Engine** | PandasAI | Natural language → pandas operations + visualizations |
-| **LLM** | OpenAI GPT-4o | Language understanding and code generation |
+| **LLM** | OpenAI GPT-3.5-turbo | Language understanding and code generation |
 | **Data** | pandas + openpyxl | CSV/XLS parsing and manipulation |
 | **Charts** | matplotlib + seaborn | Graph and chart generation |
 | **Storage** | JSON file | Prompt history persistence |
@@ -50,7 +50,7 @@ An AI-powered web application for analyzing CSV and Excel data using natural lan
 
 ### Prerequisites
 - Python 3.9+
-- OpenAI API key (with GPT-4o access)
+- OpenAI API key (with GPT-3.5-turbo access)
 
 ### Setup
 
@@ -79,7 +79,7 @@ An AI-powered web application for analyzing CSV and Excel data using natural lan
    
    Create `.streamlit/secrets.toml` (if it doesn't exist):
    ```toml
-   OPENAI_API_KEY = "sk-your-actual-api-key-here"
+   OPENAI_API_KEY = "your-actual-api-key-here"
    ```
    
    > ⚠️ This file is in `.gitignore` and will NOT be committed.
