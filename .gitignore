@@ -1,0 +1,27 @@
+# Secrets - NEVER commit API keys
+.streamlit/secrets.toml
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+
+# Exports
+exports/charts/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Prompt history (contains user data)
+prompt_history.json

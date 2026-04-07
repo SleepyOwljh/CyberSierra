@@ -1,0 +1,254 @@
+/* ============================================
+   CyberSierra AI Data Analysis App — Styles
+   ============================================ */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global overrides */
+.stApp {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header styling */
+.app-header {
+    background: linear-gradient(135deg, #6C63FF 0%, #4ECDC4 50%, #44CF6C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: -0.5px;
+}
+
+.app-subtitle {
+    color: #8B8FA3;
+    font-size: 1.05rem;
+    font-weight: 300;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+/* Card containers */
+.metric-card {
+    background: linear-gradient(135deg, #1A1D29 0%, #252836 100%);
+    border: 1px solid rgba(108, 99, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    border-color: rgba(108, 99, 255, 0.5);
+    box-shadow: 0 4px 20px rgba(108, 99, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6C63FF;
+    margin: 0;
+}
+
+.metric-label {
+    font-size: 0.85rem;
+    color: #8B8FA3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* File upload area */
+.upload-area {
+    border: 2px dashed rgba(108, 99, 255, 0.4);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    background: rgba(108, 99, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    border-color: rgba(108, 99, 255, 0.8);
+    background: rgba(108, 99, 255, 0.1);
+}
+
+/* Chat message styling */
+.chat-user {
+    background: linear-gradient(135deg, #6C63FF 0%, #5A54D6 100%);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 18px 18px 4px 18px;
+    margin: 8px 0;
+    max-width: 80%;
+    margin-left: auto;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.chat-assistant {
+    background: linear-gradient(135deg, #252836 0%, #1A1D29 100%);
+    border: 1px solid rgba(108, 99, 255, 0.15);
+    color: #FAFAFA;
+    padding: 12px 18px;
+    border-radius: 18px 18px 18px 4px;
+    margin: 8px 0;
+    max-width: 85%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* History item */
+.history-item {
+    background: #1A1D29;
+    border: 1px solid rgba(108, 99, 255, 0.1);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.history-item:hover {
+    border-color: rgba(108, 99, 255, 0.4);
+    background: #1E2130;
+}
+
+.history-prompt {
+    font-size: 0.9rem;
+    color: #E0E0E0;
+    margin: 0;
+}
+
+.history-meta {
+    font-size: 0.75rem;
+    color: #6B7280;
+    margin-top: 6px;
+}
+
+/* Feedback buttons */
+.feedback-btn {
+    background: transparent;
+    border: 1px solid rgba(108, 99, 255, 0.3);
+    border-radius: 8px;
+    padding: 6px 14px;
+    color: #8B8FA3;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.85rem;
+}
+
+.feedback-btn:hover {
+    background: rgba(108, 99, 255, 0.15);
+    border-color: #6C63FF;
+    color: #6C63FF;
+}
+
+.feedback-positive {
+    color: #44CF6C;
+    border-color: rgba(68, 207, 108, 0.3);
+}
+
+.feedback-negative {
+    color: #FF6B6B;
+    border-color: rgba(255, 107, 107, 0.3);
+}
+
+/* Status badges */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.badge-success {
+    background: rgba(68, 207, 108, 0.15);
+    color: #44CF6C;
+}
+
+.badge-info {
+    background: rgba(108, 99, 255, 0.15);
+    color: #6C63FF;
+}
+
+.badge-warning {
+    background: rgba(255, 193, 7, 0.15);
+    color: #FFC107;
+}
+
+/* Data notice */
+.data-notice {
+    background: rgba(255, 193, 7, 0.08);
+    border-left: 3px solid #FFC107;
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    color: #B0A070;
+    margin: 16px 0;
+}
+
+/* Divider */
+.styled-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(108, 99, 255, 0.3) 50%, transparent 100%);
+    margin: 24px 0;
+    border: none;
+}
+
+/* Streamlit widget overrides */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px 8px 0 0;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+/* Scrollable container */
+.scrollable-container {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+/* Data preview header */
+.preview-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+/* Animation for new messages */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.3s ease-out;
+}
+
+/* Pulse animation for loading */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.loading-pulse {
+    animation: pulse 1.5s ease-in-out infinite;
+}
