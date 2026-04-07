@@ -1,6 +1,7 @@
 # Secrets - NEVER commit API keys
 .streamlit/secrets.toml
 .env
+pandasai.log
 
 # Python
 __pycache__/
